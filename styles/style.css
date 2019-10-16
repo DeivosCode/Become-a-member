@@ -3,16 +3,15 @@ body {
     background-color: #B3D47D;
 }
 .main-container {
-    height: 850px;
-    max-width: 775px;
+    min-height: 850px;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
-    margin-right: 0;
     border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
     background-color: #fff;
 }
 
@@ -169,19 +168,25 @@ body {
 }
 
 .second-container {
-    background-image: url(../img/city.jpg);
+    /* background-image: url(../img/city.jpg); */
     background-repeat: no-repeat;
-    height: 850;
-    min-width: 435px;
-    float: right;
-    margin: 30px;
-    margin-left: 0;
-    border-top-right-radius: 30px;
+    max-width: 775px;
+    max-height: 850px;
+}
+
+.second-container__img {
+    height: 850px;
+    width: 100%;
     border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .all-content {
-    display: flex;
+    display: inline-grid;
+    grid-template-rows: 1fr 1fr;
     padding: 30px;
     margin: 30px;
+    width: 775px;
 }
+
+@media screen and (min)
