@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #B3D47D;
 }
+
 .main-container {
     min-height: 850px;
     height: 100%;
@@ -184,7 +185,7 @@ body {
 .all-content {
     display: inline-grid;
     grid-template-rows: 1fr 1fr;
-    padding: 30px;
+    margin: 30px;
     width: 775px;
 }
 
@@ -193,10 +194,14 @@ body {
         display: flex;
         width: 100%;
     }
-
+    
     .main-container {
         border-top-right-radius: 0;
         border-bottom-left-radius: 30px;
+    }
+    
+    .second-container {
+        padding-right: 30px;
     }
 
     .second-container__img {
