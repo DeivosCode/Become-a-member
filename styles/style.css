@@ -185,8 +185,23 @@ body {
     display: inline-grid;
     grid-template-rows: 1fr 1fr;
     padding: 30px;
-    margin: 30px;
     width: 775px;
 }
 
-@media screen and (min)
+@media screen and (min-width: 1024px) {
+    .all-content {
+        display: flex;
+        width: 100%;
+    }
+
+    .main-container {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+    }
+
+    .second-container__img {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 30px;
+        width: 435px;
+    }
+}
